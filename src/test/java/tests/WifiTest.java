@@ -21,7 +21,7 @@ public class WifiTest {
      * 4. Verify that the Wi-Fi has been disabled/enabled for particular device
      */
     @Test
-    public void test_disable_wifi_of_all_devices_not_connected_to_internet() {
+    public void TC03_disable_wifi_of_all_devices_not_connected_to_internet_test() {
         if (ADBUtils.isADBInstalled()) {
             List<String> devicesUDIDs = ADBUtils.getAndroidDevicesUDIDs();
             List<String> devicesNotConnectedToInternet = ADBUtils.getDevicesNotConnectedToInternet(devicesUDIDs);

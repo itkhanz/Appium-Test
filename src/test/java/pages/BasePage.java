@@ -15,6 +15,7 @@ import java.time.Duration;
 public class BasePage {
     AppiumDriver driver;
     WebDriverWait wait;
+
     public BasePage(AppiumDriver appiumDriver) {
         PageFactory.initElements(new AppiumFieldDecorator(appiumDriver), this);
         driver = appiumDriver;
@@ -74,10 +75,8 @@ public class BasePage {
 
     protected boolean isElementDisplayed(WebElement element) {
         try {
-            waitForVisibility(element);
             return element.isDisplayed();
         } catch (TimeoutException e) {
-            System.out.println("Element not found within set timeout");
             return false;
         }
     }

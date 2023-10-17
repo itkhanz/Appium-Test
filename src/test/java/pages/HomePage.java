@@ -12,6 +12,9 @@ public class HomePage extends BasePage {
         super(appiumDriver);
     }
 
+    @AndroidFindBy(accessibility = "App")
+    private WebElement appLO;
+
     @AndroidFindBy(accessibility = "Views")
     private WebElement viewsLO;
 
@@ -19,5 +22,11 @@ public class HomePage extends BasePage {
         logger.info("tapping on Views to open Views screen");
         tap(viewsLO);
         return new ViewsPage(driver);
+    }
+
+    public AppPage openAppPage() {
+        logger.info("tapping on App to open App screen");
+        tap(appLO);
+        return new AppPage(driver);
     }
 }

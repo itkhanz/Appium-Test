@@ -21,6 +21,10 @@ public class ViewsPage extends BasePage{
             "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().description(\"Spinner\"))"
     );
 
+    /*
+    This method automatically scrolls to the Spinner because of UiScrollable interface of UiAutomator2
+    Alternatively you can also scroll to element via GestureUtils W3C Sequences or built-in driver commands
+     */
     public SpinnerPage openSpinnersPage() {
         logger.info("scrolling to the Spinner list option");
         logger.info("tapping on Views to open Views screen");
