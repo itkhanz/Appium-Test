@@ -19,11 +19,6 @@ This project is built and tested with the following dependencies:
         * For example, Pixel 5 with Android 13.0 Google Play | x86_64
 * GIT Bash
 
-> Use [appium doctor](https://github.com/appium/appium/tree/master/packages/doctor) to check if your system has been successfully setup with appium
-> Run the command appium-doctor to verify the setup (Xcode is not required for this task)
-
-<img src="doc/appium-doctor-output.png" alt="appium doctor output">
-
 ## Libraries
 
 * [Java 17](https://openjdk.org/projects/jdk/17/) as programming language
@@ -33,6 +28,17 @@ This project is built and tested with the following dependencies:
 * [Log4j2](https://logging.apache.org/log4j/2.x/) as the logging management strategy
 * [Owner](https://github.com/matteobaccan/owner) to minimize the code to handle properties files
 
+## Installation
+
+* Check the following resources on how to setup Appium 2.0:
+  * [Machine setup for Appium 2.0: Mastering Appium 2.0](https://www.youtube.com/watch?v=wT2iiAUQ5BA)
+  * [Beginner’s Guide to Appium 2.0](https://medium.com/@iamfaisalkhatri/beginners-guide-to-appium-2-0-d8118b31837c)
+
+> Use [appium doctor](https://github.com/appium/appium/tree/master/packages/doctor) to check if your system has been successfully setup with appium
+
+> Run the command appium-doctor to verify the setup (Xcode is not required for this task)
+
+<img src="doc/appium-doctor-output.png" alt="appium doctor output">
 
 ## Application Under Test
 
