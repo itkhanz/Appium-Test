@@ -2,6 +2,7 @@
 
 * This project is a solution for the DCS Test Study assignment and automates important scenarios for the automation.
 * This is by no-means a full-fledged automation framework, rather a solution to a challenge task.
+* It implements POM/Page Factory and Widget design patterns.
 
 ## Pre-requisites
 
@@ -66,7 +67,7 @@ There are a total of 05 test cases implemented.
     * Click on "OK Cancel dialog with a message"
 * Click on "List dialog"
 * Validate the appearance of this dialog
-  * This command will only be successfully is the popup alert displayed in previous step is handled automatically
+  * This command will only be successfully if the popup alert displayed in previous step is handled automatically
 
 ### TestCase 03: Find all connected Device UDIDs and Disable WiFi of device not connected to Internet
 
@@ -80,7 +81,7 @@ There are a total of 05 test cases implemented.
 ### TestCase 04-05 (Bonus/Optional): Appium Widget Implementation
 
 > This test case validates the list of elements on Headers Screen as Widgets
-* 
+
 * Click on "Preference"
 * Click on "08. Headers"
 * Validate the Preference Total Count
