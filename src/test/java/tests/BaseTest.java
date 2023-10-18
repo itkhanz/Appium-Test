@@ -19,6 +19,8 @@ public class BaseTest {
     SpinnerPage spinnerPage;
     AppPage appPage;
     AlertsPage alertsPage;
+    PreferencePage preferencePage;
+    HeadersPage headersPage;
 
     @BeforeMethod(alwaysRun = true)
     public void setup(Method m) {

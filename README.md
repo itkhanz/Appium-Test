@@ -48,6 +48,8 @@ A fork of Google's Android ApiDemos application, used for testing Appium
 
 ## Test Cases
 
+There are a total of 05 test cases implemented.
+
 ### TestCase 01: Scroll to element, and select value from dropdown
 
 * Click on "Views" Tab
@@ -74,6 +76,15 @@ A fork of Google's Android ApiDemos application, used for testing Appium
 * For each of the filtered device:
   * It switches off the Wi-Fi
   * And validates that Wi-Fi is disabled
+
+### TestCase 04-05 (Bonus/Optional): Appium Widget Implementation
+
+> This test case validates the list of elements on Headers Screen as Widgets
+* 
+* Click on "Preference"
+* Click on "08. Headers"
+* Validate the Preference Total Count
+* Validate the second Preference's title and description
 
 ## Running Tests
 
@@ -105,7 +116,7 @@ gradle clean test
 
 <img src="doc/IntelliJ-output.png" alt="running tests from IDE">
 
-* It will run the whole regression suite comprising of 3 test cases split between 3 test classes.
+* It will run the whole regression suite comprising of 5 test cases split between 4 test classes.
 * Results will be available in terminal after the build is finished.
 * TestNG HTML report is generated and available at `test-output/index.html`
 * Gradle HTML report is generated and available at `gradle-reports/index.html`

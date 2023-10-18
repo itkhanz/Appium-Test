@@ -18,6 +18,9 @@ public class HomePage extends BasePage {
     @AndroidFindBy(accessibility = "Views")
     private WebElement viewsLO;
 
+    @AndroidFindBy(accessibility = "Preference")
+    private WebElement preferenceLO;
+
     public ViewsPage openViewsPage() {
         logger.info("tapping on Views to open Views screen");
         tap(viewsLO);
@@ -29,4 +32,11 @@ public class HomePage extends BasePage {
         tap(appLO);
         return new AppPage(driver);
     }
+
+    public PreferencePage openPreferencePage() {
+        logger.info("tapping on Preference to open Preference screen");
+        tap(preferenceLO);
+        return new PreferencePage(driver);
+    }
+
 }
